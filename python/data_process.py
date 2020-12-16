@@ -45,5 +45,5 @@ codes_dataset = ["EIA/PET_RWTC_D",
 for i in range(len(codes_dataset)):
     if not Path(RAW_DATA_PATH + noms_dataset[i] + ".csv").exists():
         data = quandl.get(codes_dataset[i], returns="numpy")
-        numpy.savetxt(Path(RAW_DATA_PATH + noms_dataset[i] + ".csv"), data, delimiter=',')
-
+        #numpy.savetxt(Path(RAW_DATA_PATH + noms_dataset[i] + ".csv"), data, delimiter=',')
+print(data)
